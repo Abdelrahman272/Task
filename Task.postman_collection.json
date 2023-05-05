@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "2439ca8e-c59a-4442-8d54-18178388bc23",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19592573"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "show user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"gg Sli\",\r\n    \"email\": \"sggama@gmail.com\",\r\n    \"bio\": \"Hello My Name Is sama ali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Samah Shady\",\r\n    \"email\": \"samah2@gmail.com\",\r\n    \"bio\": \"Hello My Name Is Samah Shady From Update page Tes Test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certified User",
+			"item": [
+				{
+					"name": "get certified user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/certified_user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"certified_user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store certified user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/photo/DEOD9192.JPG"
+								},
+								{
+									"key": "username",
+									"value": "Ali Mohsen",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Hello Worled",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/certified_user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"certified_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update certified user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Ali\",\r\n    \"email\": \"a@gmail.com\",\r\n    \"bio\": \"tes tes test test test test test\",\r\n    \"title\": \"Title\",\r\n    \"file\": \"BUJT7003.JPG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/certified_user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"certified_user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete certified user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/certified_user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"certified_user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "certified_user/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@gmaiil.com",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test tes tes test ",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "title title",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/photo/DEOD9192.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/certified_user/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"certified_user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location User",
+			"item": [
+				{
+					"name": "show location user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/location_user/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"location_user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Location User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Ahmed ",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@gmail.coom",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "tes test tes test tes test tes test tes test tes test ",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "20.2",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "20.45",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "2020-10-11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/location_user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"location_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Location User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Ahmed\",\r\n    \"email\": \"a@gmail.com\",\r\n    \"bio\": \"tes tes test test test\",\r\n    \"latitude\": 20.3,\r\n    \"longitude\": 20.5,\r\n    \"date_of_birth\": \"2020-10-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/location_user/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"location_user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete LocationUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/location_user/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"location_user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
