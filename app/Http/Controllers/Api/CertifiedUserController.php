@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CertifiedUserRequest;
 use App\Http\Resources\CertifiedUserResource;
 use App\Models\CertifiedUser;
-use App\Repository\CertifiedUserRepositoryInterface;
+use App\Repository\GeneralUserRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Traits\ResponseTrait;
 use App\Traits\UploadFile;
@@ -18,7 +18,7 @@ class CertifiedUserController extends Controller
 
     protected $CertifiedUser;
 
-    public function __construct(CertifiedUserRepositoryInterface $CertifiedUser)
+    public function __construct(GeneralUserRepositoryInterface $CertifiedUser)
     {
         $this->CertifiedUser = $CertifiedUser;
     }

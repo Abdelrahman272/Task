@@ -7,7 +7,7 @@ use App\Repository\LocationUserRepositoryInterface;
 use App\Models\LocationUser;
 use App\Traits\ResponseTrait;
 
-class LocationUserRepository implements LocationUserRepositoryInterface
+class LocationUserRepository implements GeneralUserRepositoryInterface
 {
     use ResponseTrait;
 

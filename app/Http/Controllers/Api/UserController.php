@@ -17,7 +17,7 @@ class UserController extends Controller
 
     protected $User;
 
-    public function __construct(UserRepositoryInterface $User)
+    public function __construct(GeneralUserRepositoryInterface $User)
     {
         $this->User = $User;
     }

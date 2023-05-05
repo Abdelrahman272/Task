@@ -8,7 +8,7 @@ use App\Http\Requests\UserRequest;
 use App\Http\Resources\UserResource;
 use App\Repository\GeneralUserRepositoryInterface;
 
-class UserRepository implements UserRepositoryInterface
+class UserRepository implements GeneralUserRepositoryInterface
 {
     public function show($id)
     {

@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LocationRequest;
 use App\Http\Resources\LocationUserResource;
 use App\Repository\GeneralUserRepositoryInterface;
-use App\Repository\LocationUserRepositoryInterface;
 use App\Traits\ResponseTrait;
 use Illuminate\Http\Request;
 
@@ -15,7 +14,7 @@ class LocationUserController extends Controller
     use ResponseTrait;
 
     protected $LocationUser;
-    public function __construct(LocationUserRepositoryInterface $LocationUser)
+    public function __construct(GeneralUserRepositoryInterface $LocationUser)
     {
         $this->LocationUser = $LocationUser;
     }

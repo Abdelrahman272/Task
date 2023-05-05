@@ -10,7 +10,7 @@ use App\Repository\CertifiedUserRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Traits\UploadFile;
 
-class CertifiedUserRepository implements CertifiedUserRepositoryInterface
+class CertifiedUserRepository implements GeneralUserRepositoryInterface
 {
     use UploadFile;
 
